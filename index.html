@@ -3,29 +3,13 @@
       <h1> Hello World! </h1>
   <body>
         
-        <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v10.0'
-          });
-        };
-
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution="install_email"
-        page_id="111575347695741">
-      </div>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Adolescent-Chatbot"
+  agent-id="6ad386b3-cb20-4049-843e-a89f77b20b15"
+  language-code="en"
+></df-messenger>
   </body>
       
 
